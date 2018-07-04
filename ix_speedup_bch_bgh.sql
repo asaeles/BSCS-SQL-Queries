@@ -51,6 +51,8 @@ AS
 
 COMMENT ON TABLE sysadm.group_share IS 'contract type used by BGH for E-bill';
 
+GRANT SELECT ON sysadm.group_share TO BSCS_ROLE;
+
 CREATE OR REPLACE FORCE VIEW sysadm.cust_mlg_attach_view
 (
 	customer_id,
